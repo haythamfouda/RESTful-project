@@ -1,0 +1,14 @@
+<!doctype html>
+<html ng-app="myApp">
+	<head>
+		<title>Weather Application</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    	<script src="controller.js"></script>
+	</head>
+
+	<body>
+		<div ng-controller="weatherCtrl">
+			<p>Cairo {{" " + ((weather.main.temp - 273) | number: 2) + "C"}} </p>
+		</div>
+	</body>
+</html>
